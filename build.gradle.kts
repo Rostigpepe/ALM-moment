@@ -27,10 +27,27 @@ dependencyManagement {
 	}
 }
 
+publishing {
+	repositories {
+		maven {
+			name = "GitHubPackages"
+			url = uri("https://maven.pkg.github.com/Rostigpepe/ALM-moment")
+			credentials {
+				username = project.findProperty("gpr.user") as String? ?: System.getenv("Rostigpepe")
+				password = project.findProperty("gpr.key") as String? ?: System.getenv("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")
+			}
+		}
+	}
+	publications {
+		register<MavenPublication>("gpr") {
+			from(components["java"])
+		}
+	}
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-
 tasks.named<org.springframework.boot.gradle.tasks.bundling.BootBuildImage>("bootBuildImage") {
 	imageName.set("rostigpepe/almtime")
 
