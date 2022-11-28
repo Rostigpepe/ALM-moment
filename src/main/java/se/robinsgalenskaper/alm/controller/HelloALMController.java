@@ -13,7 +13,7 @@ public class HelloALMController extends BasicController{
 
     @GetMapping("/testForProtect")
     public String testForProtect(){
-        return "testForProtect";
+        return "testForProtect again";
     }
 
 }
