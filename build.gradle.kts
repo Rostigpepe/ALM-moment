@@ -39,8 +39,8 @@ publishing {
 		}
 	}
 	publications {
-		register<MavenPublication>("bootJava") {
-			from(components["java"])
+		register<MavenPublication>("gpr") {
+			from(components["bootJava"])
 		}
 	}
 }
