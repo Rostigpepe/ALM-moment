@@ -11,4 +11,9 @@ public class HelloALMController extends BasicController{
         return "Hello ALM";
     }
 
+    @GetMapping("/testForProtect")
+    public String testForProtect(){
+        return "testForProtect";
+    }
+
 }
