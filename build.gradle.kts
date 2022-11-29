@@ -33,8 +33,8 @@ publishing {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/rostigpepe/alm-moment")
 			credentials {
-				username = "Rostigpepe"
-				password = "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"
+				username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+				password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
 			}
 		}
 	}
