@@ -34,7 +34,7 @@ publishing {
 			url = uri("https://maven.pkg.github.com/rostigpepe/alm-moment")
 			credentials {
 				username = "Rostigpepe"
-				password = "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"
+				password = "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"
 			}
 		}
 	}
