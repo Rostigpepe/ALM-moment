@@ -33,7 +33,7 @@ publishing {
 			name = "GitHubPackages"
 			url = uri("https://maven.pkg.github.com/rostigpepe/alm-moment")
 			credentials {
-				username = "rostigpepe"
+				username = "Rostigpepe"
 				password = "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"
 			}
 		}
