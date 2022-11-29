@@ -40,7 +40,7 @@ publishing {
 	}
 	publications {
 		register<MavenPublication>("gpr") {
-			from(components["bootJava"])
+			artifact(tasks.named("bootJar"))
 		}
 	}
 }
