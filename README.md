@@ -1,6 +1,5 @@
 # ALM ASSIGNMENT
 
-## RULES FOR PROJECT
 ### MASTER BRANCH
 - Master is protected and cannot be directly changed
 
