@@ -24,3 +24,5 @@ jobs:
           arguments: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: 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
+          USERNAME: rostigpepe
