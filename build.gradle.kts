@@ -40,6 +40,7 @@ publishing {
 	}
 	publications {
 		register<MavenPublication>("gpr") {
+			artifactId = "almtime"
 			artifact(tasks.named("bootJar"))
 		}
 	}
